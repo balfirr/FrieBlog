@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrieBlog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>FrieBlog</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contents">Contents</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="iqbal">
+            <img src="peppresser1.jpg" alt="IQBAL_Image" class="iqbal-image">
+            <div class="iqbal-text">
+                <h1>Welcome to FrieBlog</h1>
+                <p>Berisi tentang curahan hati seorang pemuda biasa.</p>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>Kenalkan namaku Frie, seorang pemuda yang ingin mengeluarkan seluruh isi pikirannya melalui tulisan blog.
+            </p>
+        </section>
+        <section id="contents">
+            <h2>Contents</h2>
+            <div class="blog-post">
+                <h3>Perkenalan</h3>
+                <p>Halo, namaku Frie. Klik tombol dibawah untuk membaca.</p>
+                <button onclick="readMore()">Baca</button>
+            </div>
+            <div class="blog-post">
+                <h3>Juli yang Dingin</h3>
+                <p>Juli ini begitu dingin ya. Klik tombol dibawah untuk membaca.</p>
+                <button onclick="readMore()">Baca</button>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Hubungi saya</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 FrieBlog. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
